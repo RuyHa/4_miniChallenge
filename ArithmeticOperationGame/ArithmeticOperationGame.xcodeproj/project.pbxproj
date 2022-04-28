@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70C0B46028200B55007A4A68 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B45F28200B55007A4A68 /* SelectView.swift */; };
+		70C0B4632820C346007A4A68 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4622820C346007A4A68 /* GameView.swift */; };
+		70C0B4652820C357007A4A68 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4642820C357007A4A68 /* TestView.swift */; };
+		70C0B4672820C36E007A4A68 /* ExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4662820C36E007A4A68 /* ExView.swift */; };
+		70C0B4692820C980007A4A68 /* ArithmeticOperationNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4682820C980007A4A68 /* ArithmeticOperationNavView.swift */; };
+		70C94649281A534600138A91 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C94648281A534600138A91 /* MainView.swift */; };
+		70C9464C281A553100138A91 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C9464B281A553100138A91 /* Extension.swift */; };
+		70C9464E281A5BFE00138A91 /* AssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C9464D281A5BFE00138A91 /* AssetsView.swift */; };
+		70C94651281A5D1500138A91 /* TestView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C94650281A5D1500138A91 /* TestView1.swift */; };
+		70C94653281A5D2100138A91 /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C94652281A5D2100138A91 /* TestView2.swift */; };
+		70C94655281AA62100138A91 /* TestView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C94654281AA62100138A91 /* TestView3.swift */; };
+		70C94657281AA63B00138A91 /* TestView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C94656281AA63B00138A91 /* TestView4.swift */; };
+		70C94659281AA66500138A91 /* MainNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C94658281AA66500138A91 /* MainNavView.swift */; };
 		70D78B0F281919F400832628 /* ArithmeticOperationGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D78B0E281919F400832628 /* ArithmeticOperationGameApp.swift */; };
 		70D78B11281919F400832628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D78B10281919F400832628 /* ContentView.swift */; };
 		70D78B13281919F600832628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D78B12281919F600832628 /* Assets.xcassets */; };
@@ -14,6 +27,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70C0B45F28200B55007A4A68 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		70C0B4622820C346007A4A68 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		70C0B4642820C357007A4A68 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		70C0B4662820C36E007A4A68 /* ExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExView.swift; sourceTree = "<group>"; };
+		70C0B4682820C980007A4A68 /* ArithmeticOperationNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperationNavView.swift; sourceTree = "<group>"; };
+		70C94648281A534600138A91 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		70C9464B281A553100138A91 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		70C9464D281A5BFE00138A91 /* AssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsView.swift; sourceTree = "<group>"; };
+		70C94650281A5D1500138A91 /* TestView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView1.swift; sourceTree = "<group>"; };
+		70C94652281A5D2100138A91 /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
+		70C94654281AA62100138A91 /* TestView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView3.swift; sourceTree = "<group>"; };
+		70C94656281AA63B00138A91 /* TestView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView4.swift; sourceTree = "<group>"; };
+		70C94658281AA66500138A91 /* MainNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavView.swift; sourceTree = "<group>"; };
 		70D78B0B281919F400832628 /* ArithmeticOperationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticOperationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D78B0E281919F400832628 /* ArithmeticOperationGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperationGameApp.swift; sourceTree = "<group>"; };
 		70D78B10281919F400832628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +58,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70C0B4612820C1CC007A4A68 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				70C0B4622820C346007A4A68 /* GameView.swift */,
+				70C0B4642820C357007A4A68 /* TestView.swift */,
+				70C0B4662820C36E007A4A68 /* ExView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		70C94646281A532200138A91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70C9464F281A5D0700138A91 /* TestView */,
+				70C94648281A534600138A91 /* MainView.swift */,
+				70C0B45F28200B55007A4A68 /* SelectView.swift */,
+				70C0B4612820C1CC007A4A68 /* SubView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70C94647281A532E00138A91 /* AssetsView */ = {
+			isa = PBXGroup;
+			children = (
+				70C9464D281A5BFE00138A91 /* AssetsView.swift */,
+				70C94658281AA66500138A91 /* MainNavView.swift */,
+				70C0B4682820C980007A4A68 /* ArithmeticOperationNavView.swift */,
+			);
+			path = AssetsView;
+			sourceTree = "<group>";
+		};
+		70C9464A281A551600138A91 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				70C9464B281A553100138A91 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		70C9464F281A5D0700138A91 /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				70C94650281A5D1500138A91 /* TestView1.swift */,
+				70C94652281A5D2100138A91 /* TestView2.swift */,
+				70C94654281AA62100138A91 /* TestView3.swift */,
+				70C94656281AA63B00138A91 /* TestView4.swift */,
+			);
+			path = TestView;
+			sourceTree = "<group>";
+		};
 		70D78B02281919F400832628 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +127,9 @@
 		70D78B0D281919F400832628 /* ArithmeticOperationGame */ = {
 			isa = PBXGroup;
 			children = (
+				70C9464A281A551600138A91 /* Extension */,
+				70C94647281A532E00138A91 /* AssetsView */,
+				70C94646281A532200138A91 /* View */,
 				70D78B0E281919F400832628 /* ArithmeticOperationGameApp.swift */,
 				70D78B10281919F400832628 /* ContentView.swift */,
 				70D78B12281919F600832628 /* Assets.xcassets */,
@@ -137,8 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C94655281AA62100138A91 /* TestView3.swift in Sources */,
+				70C0B46028200B55007A4A68 /* SelectView.swift in Sources */,
+				70C94657281AA63B00138A91 /* TestView4.swift in Sources */,
+				70C94651281A5D1500138A91 /* TestView1.swift in Sources */,
 				70D78B11281919F400832628 /* ContentView.swift in Sources */,
+				70C94659281AA66500138A91 /* MainNavView.swift in Sources */,
+				70C9464E281A5BFE00138A91 /* AssetsView.swift in Sources */,
+				70C94649281A534600138A91 /* MainView.swift in Sources */,
+				70C0B4632820C346007A4A68 /* GameView.swift in Sources */,
+				70C0B4672820C36E007A4A68 /* ExView.swift in Sources */,
+				70C94653281A5D2100138A91 /* TestView2.swift in Sources */,
+				70C0B4692820C980007A4A68 /* ArithmeticOperationNavView.swift in Sources */,
+				70C0B4652820C357007A4A68 /* TestView.swift in Sources */,
 				70D78B0F281919F400832628 /* ArithmeticOperationGameApp.swift in Sources */,
+				70C9464C281A553100138A91 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
