@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ExView: View {
+    @Binding var exType : ExType
+    var ppap = ExClass()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(ppap.exString(ex: exType))")
     }
 }
 
+
 struct ExView_Previews: PreviewProvider {
     static var previews: some View {
-        ExView()
+        ExView(exType: .constant(.ptAt))
+
     }
 }

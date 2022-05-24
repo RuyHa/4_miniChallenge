@@ -56,6 +56,22 @@ enum GameType{
     //스위치 케이스로 값을 다 던진다.
 }
 
+enum ExType{
+    //Plus One And One
+    //과 같은 의미
+    case poAo
+    case poAt
+    case ptAt
+    
+    case moAo
+    case moAt
+    case mtAt
+    
+    case multiply
+    
+    case divide
+}
+
 enum ArithmeticOperationNavVeiw {
     case poAo
     case poAt
@@ -129,6 +145,31 @@ enum ArithmeticOperationNavVeiw {
     // 그 값 전달 하는 방법을 어캐 해야 할지 몰라서 결국...
     // 끔찍한 코드가 되었다..
     
+    @ViewBuilder
+    var exView: some View{
+        switch self{
+        case.poAo :
+            ExView(exType: .constant(.poAo)).navigationBarTitle("? + ? = ?")
+        case.poAt :
+            ExView(exType: .constant(.poAt)).navigationBarTitle("? + ?? = ?")
+        case.ptAt :
+            ExView(exType: .constant(.ptAt)).navigationBarTitle("?? + ? = ?")
+            
+        case.moAo:
+            ExView(exType: .constant(.moAo)).navigationBarTitle("? - ? = ?")
+        case.moAt:
+            ExView(exType: .constant(.moAt)).navigationBarTitle("?? - ? = ?")
+        case.mtAt:
+            ExView(exType: .constant(.mtAt)).navigationBarTitle("?? - ?? = ?")
+            
+        case.multiply :
+            ExView(exType: .constant(.multiply)).navigationBarTitle("? × ? = ?")
+            
+        case.divide :
+            ExView(exType: .constant(.divide)).navigationBarTitle("? ÷ ? = ?")
+        }
+    }
+    
 }
 
 
@@ -177,11 +218,15 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
                         .background(Color(hex: "#F0DD5E"))
                 }
                 
-                Text("설명") //ExView
-                    .font(.system(size: fontSize, weight: .light))
-                    .foregroundColor(Color(hex:"#"))
-                    .frame(width: viewWidth/3, height:viewHidth*0.6, alignment: .center)
-                    .background(Color(hex: "#A7E1EF"))
+                
+                NavigationLink(destination: viewName.exView){//TestView
+                    Text("설명")
+                        .font(.system(size: fontSize, weight: .light))
+                        .foregroundColor(Color(hex:"#"))
+                        .frame(width: viewWidth/3, height:viewHidth*0.6, alignment: .center)
+                        .background(Color(hex: "#A7E1EF"))
+                }
+                
             }
         }
         
