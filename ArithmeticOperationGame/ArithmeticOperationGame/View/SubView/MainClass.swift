@@ -10,7 +10,7 @@ import Foundation
 
 class MainClass {
     
-    func exTitleString(ex: MainType) -> String{
+    func titleString(ex: MainType) -> String{
         switch ex {
         case .poAo:
             return "한자릿수 더하기 한자릿수"
@@ -25,9 +25,9 @@ class MainClass {
         case .mtAt:
             return "한자릿수 빼기 한자릿수"
         case .multiply:
-            return "7"
+            return "구구단"
         case .divide:
-            return "8"
+            return "리버스 구구단"
         }
     }
     

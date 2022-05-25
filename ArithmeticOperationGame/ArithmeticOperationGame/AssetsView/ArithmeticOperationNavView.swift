@@ -26,14 +26,7 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
     var fontSize  : CGFloat = 18
     
     func body(content: Content) -> some View {
-        //        NavigationLink(destination: navViewName.view){
-        //            Image(systemName: navViewName.symbolName)
-        //                .font(.system(size: 90, weight: .light))
-        //                .foregroundColor(Color(hex:"#"))
-        //                .frame(width: 100, height:100, alignment: .center)
-        //                .background(Color(hex: "#FFA2C4"))
-        //                .cornerRadius(20)
-        //        }
+   
         VStack(spacing: 0) {
             //스택은 자체적으로 패딩 처럼 보이는 값을 가지고 있습니다.
             //하지만 때로는 우리는 한개의 도형? 처럼 보이는 뷰가 필요하죠

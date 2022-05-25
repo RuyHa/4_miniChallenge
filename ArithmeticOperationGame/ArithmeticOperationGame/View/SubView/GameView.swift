@@ -13,7 +13,7 @@ struct GameView: View {
 
     
     var body: some View {
-        Text("\(gvClass.exTitleString(ex: gameType))")
+        Text("\(gvClass.titleString(ex: gameType))")
 //        Text("test")
         //여기에 클래스로 선언한 값으 끌고오자
     }

@@ -13,7 +13,7 @@ struct TestView: View {
 
     
     var body: some View {
-        Text("\(testClass.exTitleString(ex: testType))")
+        Text("\(testClass.titleString(ex: testType))")
 //        Text("test")
         //여기에 클래스로 선언한 값으 끌고오자
     }
