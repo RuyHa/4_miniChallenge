@@ -14,7 +14,8 @@ import SwiftUI
 // 곱하기 나누기는 1*1 즉 구구단만 값을 넘겨줄 것 입니다.
 // 애들이 쓰는데 @@*@@는 도망갈거 같아요.
 
-enum GameType{
+
+enum SubType{
     //Plus One And One
     //과 같은 의미
     case poAo
@@ -28,49 +29,8 @@ enum GameType{
     case multiply
     
     case divide
-    
-    
-    var titleString : String {
-        switch self{
-        case.poAo:
-            return "한자릿수 더하기 한자릿수"
-        case.poAt:
-            return "두자릿수 더하기 한자릿수"
-        case.ptAt:
-            return "두자릿수 더하기 두자릿수"
-            
-        case.moAo:
-            return "한자릿수 빼기 한자릿수"
-        case.moAt:
-            return "두자릿수 빼기 한자릿수"
-        case.mtAt:
-            return "두자릿수 빼기 두자릿수"
-            
-        case.multiply:
-            return "한자릿수 곱하기 한자릿수"
-            
-        case.divide:
-            return "두자릿수 나누기 한자릿수"
-        }
-    }
-    //스위치 케이스로 값을 다 던진다.
 }
 
-enum ExType{
-    //Plus One And One
-    //과 같은 의미
-    case poAo
-    case poAt
-    case ptAt
-    
-    case moAo
-    case moAt
-    case mtAt
-    
-    case multiply
-    
-    case divide
-}
 
 enum ArithmeticOperationNavVeiw {
     case poAo

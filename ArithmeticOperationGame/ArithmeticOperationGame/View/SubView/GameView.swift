@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct GameView: View {
-    @Binding var gameType : GameType
-   
+    @Binding var gameType : SubType
+    var ppap = SubClass()
+
     
     var body: some View {
-        Text("\(gameType.titleString)")
+        Text("\(ppap.exTitleString(ex: gameType))")
+//        Text("test")
+        //여기에 클래스로 선언한 값으 끌고오자
     }
     
 }
