@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct GameView: View {
-    @Binding var gameType : SubType
-    var ppap = SubClass()
+    @Binding var gameType : MainType
+    var ppap = MainClass()
 
     
     var body: some View {

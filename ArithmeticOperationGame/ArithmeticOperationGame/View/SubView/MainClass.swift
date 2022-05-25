@@ -8,10 +8,9 @@
 import Foundation
 
 
-class SubClass {
+class MainClass {
     
-
-    func exTitleString(ex: SubType) -> String{
+    func exTitleString(ex: MainType) -> String{
         switch ex {
         case .poAo:
             return "한자릿수 더하기 한자릿수"
@@ -33,7 +32,7 @@ class SubClass {
     }
     
     
-    func exString(ex: SubType) -> String{
+    func exString(ex: MainType) -> String{
         switch ex {
         case .poAo:
             return "대충 한자릿수 더하기"

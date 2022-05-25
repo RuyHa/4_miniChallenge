@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ExView: View {
-    @Binding var exType : SubType
-    var ppap = SubClass()
+    @Binding var exType : MainType
+    var ppap = MainClass()
     
     var body: some View {
         Text("\(ppap.exString(ex: exType))")

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7057499C283E530800445EFD /* SubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057499B283E530800445EFD /* SubClass.swift */; };
+		7057499C283E530800445EFD /* MainClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057499B283E530800445EFD /* MainClass.swift */; };
 		70C0B46028200B55007A4A68 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B45F28200B55007A4A68 /* SelectView.swift */; };
 		70C0B4632820C346007A4A68 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4622820C346007A4A68 /* GameView.swift */; };
 		70C0B4652820C357007A4A68 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4642820C357007A4A68 /* TestView.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7057499B283E530800445EFD /* SubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubClass.swift; sourceTree = "<group>"; };
+		7057499B283E530800445EFD /* MainClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClass.swift; sourceTree = "<group>"; };
 		70C0B45F28200B55007A4A68 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		70C0B4622820C346007A4A68 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		70C0B4642820C357007A4A68 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				70C0B4622820C346007A4A68 /* GameView.swift */,
 				70C0B4642820C357007A4A68 /* TestView.swift */,
 				70C0B4662820C36E007A4A68 /* ExView.swift */,
-				7057499B283E530800445EFD /* SubClass.swift */,
+				7057499B283E530800445EFD /* MainClass.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 				70C0B4672820C36E007A4A68 /* ExView.swift in Sources */,
 				70C94653281A5D2100138A91 /* TestView2.swift in Sources */,
 				70C0B4692820C980007A4A68 /* ArithmeticOperationNavView.swift in Sources */,
-				7057499C283E530800445EFD /* SubClass.swift in Sources */,
+				7057499C283E530800445EFD /* MainClass.swift in Sources */,
 				70C0B4652820C357007A4A68 /* TestView.swift in Sources */,
 				70D78B0F281919F400832628 /* ArithmeticOperationGameApp.swift in Sources */,
 				70C9464C281A553100138A91 /* Extension.swift in Sources */,

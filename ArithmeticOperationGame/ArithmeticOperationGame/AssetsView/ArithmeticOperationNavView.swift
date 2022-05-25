@@ -15,7 +15,8 @@ import SwiftUI
 // 애들이 쓰는데 @@*@@는 도망갈거 같아요.
 
 
-enum SubType{
+
+enum MainType{
     //Plus One And One
     //과 같은 의미
     case poAo
