@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7057499C283E530800445EFD /* MainClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057499B283E530800445EFD /* MainClass.swift */; };
+		7057499E283E5AEF00445EFD /* ArithmeticOperationViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057499D283E5AEF00445EFD /* ArithmeticOperationViewClass.swift */; };
 		70C0B46028200B55007A4A68 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B45F28200B55007A4A68 /* SelectView.swift */; };
 		70C0B4632820C346007A4A68 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4622820C346007A4A68 /* GameView.swift */; };
 		70C0B4652820C357007A4A68 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0B4642820C357007A4A68 /* TestView.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		7057499B283E530800445EFD /* MainClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClass.swift; sourceTree = "<group>"; };
+		7057499D283E5AEF00445EFD /* ArithmeticOperationViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperationViewClass.swift; sourceTree = "<group>"; };
 		70C0B45F28200B55007A4A68 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		70C0B4622820C346007A4A68 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		70C0B4642820C357007A4A68 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				70C9464D281A5BFE00138A91 /* AssetsView.swift */,
 				70C94658281AA66500138A91 /* MainNavView.swift */,
 				70C0B4682820C980007A4A68 /* ArithmeticOperationNavView.swift */,
+				7057499D283E5AEF00445EFD /* ArithmeticOperationViewClass.swift */,
 			);
 			path = AssetsView;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C94655281AA62100138A91 /* TestView3.swift in Sources */,
+				7057499E283E5AEF00445EFD /* ArithmeticOperationViewClass.swift in Sources */,
 				70C0B46028200B55007A4A68 /* SelectView.swift in Sources */,
 				70C94657281AA63B00138A91 /* TestView4.swift in Sources */,
 				70C94651281A5D1500138A91 /* TestView1.swift in Sources */,

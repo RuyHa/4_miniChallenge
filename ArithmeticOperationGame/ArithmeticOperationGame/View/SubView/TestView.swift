@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct TestView: View {
+    @Binding var testType : MainType
+    var testClass = MainClass()
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(testClass.exTitleString(ex: testType))")
+//        Text("test")
+        //여기에 클래스로 선언한 값으 끌고오자
     }
 }
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        TestView()
+        TestView(testType: .constant(.poAo))
+
     }
 }

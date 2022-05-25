@@ -16,99 +16,6 @@ import SwiftUI
 
 
 
-enum MainType{
-    //Plus One And One
-    //과 같은 의미
-    case poAo
-    case poAt
-    case ptAt
-    
-    case moAo
-    case moAt
-    case mtAt
-    
-    case multiply
-    
-    case divide
-}
-
-
-class ArithmeticOperationViewClass{
-    func boxString(type: MainType) -> String{
-        switch type{
-        case.poAo:
-            return "? + ? = ?"
-        case.poAt:
-            return "?? + ? = ?"
-        case.ptAt:
-            return "?? + ?? = ?"
-            
-        case.moAo:
-            return "? - ? = ?"
-        case.moAt:
-            return "?? - ? = ?"
-        case.mtAt:
-            return "?? - ?? = ?"
-            
-        case.multiply:
-            return "? × ? = ?"
-            
-        case.divide:
-            return "? ÷ ? = ?"
-        }
-    }
-    
-    @ViewBuilder
-    func gameView(type:MainType) -> some View{
-        switch type{
-        case.poAo :
-            GameView(gameType: .constant(.poAo))
-        case.poAt :
-            GameView(gameType: .constant(.poAt))
-        case.ptAt :
-            GameView(gameType: .constant(.ptAt))
-            
-        case.moAo:
-            GameView(gameType: .constant(.moAo))
-        case.moAt:
-            GameView(gameType: .constant(.moAt))
-        case.mtAt:
-            GameView(gameType: .constant(.mtAt))
-            
-        case.multiply :
-            GameView(gameType: .constant(.multiply))
-            
-        case.divide :
-            GameView(gameType: .constant(.divide))
-        }
-    }
-
-    @ViewBuilder
-    func exView(type:MainType) -> some View{
-        switch type{
-        case.poAo :
-            ExView(exType: .constant(.poAo)).navigationBarTitle("? + ? = ?")
-        case.poAt :
-            ExView(exType: .constant(.poAt)).navigationBarTitle("? + ?? = ?")
-        case.ptAt :
-            ExView(exType: .constant(.ptAt)).navigationBarTitle("?? + ? = ?")
-            
-        case.moAo:
-            ExView(exType: .constant(.moAo)).navigationBarTitle("? - ? = ?")
-        case.moAt:
-            ExView(exType: .constant(.moAt)).navigationBarTitle("?? - ? = ?")
-        case.mtAt:
-            ExView(exType: .constant(.mtAt)).navigationBarTitle("?? - ?? = ?")
-            
-        case.multiply :
-            ExView(exType: .constant(.multiply)).navigationBarTitle("? × ? = ?")
-            
-        case.divide :
-            ExView(exType: .constant(.divide)).navigationBarTitle("? ÷ ? = ?")
-        }
-    }
-}
-
 
 struct ArithmeticOperationNavVeiwModifier: ViewModifier {
     var type : MainType
@@ -148,7 +55,7 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
                         .background(Color(hex: "#F1C3B7"))
                 }
                 
-                NavigationLink(destination: aovc.gameView(type: type)){//TestView
+                NavigationLink(destination: aovc.testView(type: type)){//TestView
                     Text("도전모드")
                         .font(.system(size: fontSize, weight: .light))
                         .foregroundColor(Color(hex:"#"))

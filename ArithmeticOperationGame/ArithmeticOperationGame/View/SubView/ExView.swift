@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ExView: View {
     @Binding var exType : MainType
-    var ppap = MainClass()
+    var exClass = MainClass()
     
     var body: some View {
-        Text("\(ppap.exString(ex: exType))")
+        Text("\(exClass.exString(ex: exType))")
     }
 }
 
