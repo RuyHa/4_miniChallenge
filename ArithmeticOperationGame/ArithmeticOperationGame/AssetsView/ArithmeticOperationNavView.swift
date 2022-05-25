@@ -33,20 +33,9 @@ enum MainType{
 }
 
 
-enum ArithmeticOperationNavVeiw {
-    case poAo
-    case poAt
-    case ptAt
-    
-    case moAo
-    case moAt
-    case mtAt
-    
-    case multiply
-    case divide
-    
-    var boxString : String {
-        switch self{
+class ArithmeticOperationViewClass{
+    func boxString(type: MainType) -> String{
+        switch type{
         case.poAo:
             return "? + ? = ?"
         case.poAt:
@@ -67,16 +56,11 @@ enum ArithmeticOperationNavVeiw {
         case.divide:
             return "? ÷ ? = ?"
         }
-        
-        
-        
-        
     }
     
-    
     @ViewBuilder
-    var gameView: some View{
-        switch self{
+    func gameView(type:MainType) -> some View{
+        switch type{
         case.poAo :
             GameView(gameType: .constant(.poAo))
         case.poAt :
@@ -98,17 +82,10 @@ enum ArithmeticOperationNavVeiw {
             GameView(gameType: .constant(.divide))
         }
     }
-    // 뷰를 하나만 만들고 여기에 값을 넣어서 던지면 되는거 아닐까?
-    // 굳이 뷰를 3개나 만들어야하나? 다 똑같은 뷰인데
-    // 사용하기 배열  전에 카운트 돌려서 뷰 제한 걸면 될 듯
-    // 뷰를 어레이로 못 던져서 다른 방법을 생각하다가
-    // 뷰안에 값을 던져서 그 값에 따라 뷰가 다르게 그려지게 하려고했는데
-    // 그 값 전달 하는 방법을 어캐 해야 할지 몰라서 결국...
-    // 끔찍한 코드가 되었다..
-    
+
     @ViewBuilder
-    var exView: some View{
-        switch self{
+    func exView(type:MainType) -> some View{
+        switch type{
         case.poAo :
             ExView(exType: .constant(.poAo)).navigationBarTitle("? + ? = ?")
         case.poAt :
@@ -130,12 +107,12 @@ enum ArithmeticOperationNavVeiw {
             ExView(exType: .constant(.divide)).navigationBarTitle("? ÷ ? = ?")
         }
     }
-    
 }
 
 
 struct ArithmeticOperationNavVeiwModifier: ViewModifier {
-    var viewName : ArithmeticOperationNavVeiw
+    var type : MainType
+    var aovc = ArithmeticOperationViewClass()
     
     var viewWidth : CGFloat = 280
     var viewHidth : CGFloat = 280 / 3
@@ -155,7 +132,7 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
             //하지만 때로는 우리는 한개의 도형? 처럼 보이는 뷰가 필요하죠
             //그럴때는 spacing :0 을 주면 딱 붙습니다.
             
-            Text("\(viewName.boxString)")
+            Text("\(aovc.boxString(type: type))")
                 .font(.system(size: 60, weight: .light))
                 .foregroundColor(Color(hex:"#"))
                 .frame(width: viewWidth, height:viewHidth, alignment: .center)
@@ -163,7 +140,7 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
             
             HStack(spacing: 0){
                 
-                NavigationLink(destination: viewName.gameView){ //GameView
+                NavigationLink(destination: aovc.gameView(type: type)){ //GameView
                     Text("연습모드")
                         .font(.system(size: fontSize, weight: .light))
                         .foregroundColor(Color(hex:"#"))
@@ -171,7 +148,7 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
                         .background(Color(hex: "#F1C3B7"))
                 }
                 
-                NavigationLink(destination: viewName.gameView){//TestView
+                NavigationLink(destination: aovc.gameView(type: type)){//TestView
                     Text("도전모드")
                         .font(.system(size: fontSize, weight: .light))
                         .foregroundColor(Color(hex:"#"))
@@ -180,7 +157,7 @@ struct ArithmeticOperationNavVeiwModifier: ViewModifier {
                 }
                 
                 
-                NavigationLink(destination: viewName.exView){//TestView
+                NavigationLink(destination: aovc.exView(type: type)){//TestView
                     Text("설명")
                         .font(.system(size: fontSize, weight: .light))
                         .foregroundColor(Color(hex:"#"))

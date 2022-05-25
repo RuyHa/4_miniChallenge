@@ -46,8 +46,8 @@ extension View{
         //이부분은 정확히 설명이 어려우나 modirier이 수식어라는 뜻이 있다고 합니다.
     }
     
-    func ArithmeticOperationNavViewStyle(viewName: ArithmeticOperationNavVeiw) ->some View {
-        modifier(ArithmeticOperationNavVeiwModifier(viewName: viewName))
+    func ArithmeticOperationNavViewStyle(type: MainType) ->some View {
+        modifier(ArithmeticOperationNavVeiwModifier(type: type))
         //이부분은 정확히 설명이 어려우나 modirier이 수식어라는 뜻이 있다고 합니다.
     }
     
