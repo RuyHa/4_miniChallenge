@@ -12,14 +12,21 @@ struct ExView: View {
     var exClass = MainClass()
     
     var body: some View {
-        Text("\(exClass.exString(ex: exType))")
-    }
+        Color(hex:"#F6EFEA")
+            .ignoresSafeArea()
+            .overlay(
+                VStack{
+                    Text("설명페이지입니다.")
+                    Text("\(exClass.exString(ex: exType))")
+                }//VStack
+            )//overlay
+    }//View
 }
 
 
 struct ExView_Previews: PreviewProvider {
     static var previews: some View {
         ExView(exType: .constant(.ptAt))
-
+        
     }
 }

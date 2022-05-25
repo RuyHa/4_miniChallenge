@@ -10,18 +10,23 @@ import SwiftUI
 struct TestView: View {
     @Binding var testType : MainType
     var testClass = MainClass()
-
+    
     
     var body: some View {
-        Text("\(testClass.titleString(ex: testType))")
-//        Text("test")
-        //여기에 클래스로 선언한 값으 끌고오자
-    }
+        Color(hex:"#F6EFEA")
+            .ignoresSafeArea()
+            .overlay(
+                VStack{
+                    Text("도전모드입니다.")
+                    Text("\(testClass.titleString(ex: testType))")
+                }//VStack
+            )//overlay
+    }//View
 }
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
         TestView(testType: .constant(.poAo))
-
+        
     }
 }

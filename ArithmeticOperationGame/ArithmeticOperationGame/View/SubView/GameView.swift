@@ -10,13 +10,19 @@ import SwiftUI
 struct GameView: View {
     @Binding var gameType : MainType
     var gvClass = MainClass()
-
+    
     
     var body: some View {
-        Text("\(gvClass.titleString(ex: gameType))")
-//        Text("test")
-        //여기에 클래스로 선언한 값으 끌고오자
-    }
+        
+        Color(hex:"#F6EFEA")
+            .ignoresSafeArea()
+            .overlay(
+                VStack{
+                    Text("연습모드입니다.")
+                    Text("\(gvClass.titleString(ex: gameType))")
+                }//VStack
+            )//overlay
+    }//View
     
 }
 
