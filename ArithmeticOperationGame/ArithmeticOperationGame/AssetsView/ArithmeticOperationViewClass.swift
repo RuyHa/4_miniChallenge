@@ -27,6 +27,7 @@ enum MainType{
     case multiply
     
     case divide
+  
 }
 
 
